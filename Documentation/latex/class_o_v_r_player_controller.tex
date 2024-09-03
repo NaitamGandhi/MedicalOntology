@@ -1,0 +1,489 @@
+\hypertarget{class_o_v_r_player_controller}{}\doxysection{O\+V\+R\+Player\+Controller Class Reference}
+\label{class_o_v_r_player_controller}\index{OVRPlayerController@{OVRPlayerController}}
+
+
+Controls the player\textquotesingle{}s movement in virtual reality.  
+
+
+Inheritance diagram for O\+V\+R\+Player\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_o_v_r_player_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_player_controller_aeb1259177df10f92d65350900161bb85}\label{class_o_v_r_player_controller_aeb1259177df10f92d65350900161bb85}} 
+virtual void {\bfseries Update\+Movement} ()
+\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a948ea9ddea7aba20746fb918f3162be5}{Update\+Transform}} (O\+V\+R\+Camera\+Rig rig)
+\begin{DoxyCompactList}\small\item\em Invoked by O\+V\+R\+Camera\+Rig\textquotesingle{}s Updated\+Anchors callback. Allows the Hmd rotation to update the facing direction of the player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_ace5169f33e87513d00fb8f74447a29a9}{Jump}} ()
+\begin{DoxyCompactList}\small\item\em Jump! Must be enabled manually. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a5bc3a39d7183b4a8ca7137e74ae18245}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a78d025669f94edceac2d9a2e533d3f0c}{Get\+Move\+Scale\+Multiplier}} (ref float move\+Scale\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Gets the move scale multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_af1fc4270fae3033baec271faf3f127e1}{Set\+Move\+Scale\+Multiplier}} (float move\+Scale\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Sets the move scale multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a6398eaeae9a9a7cb2bcf05130ce024de}{Get\+Rotation\+Scale\+Multiplier}} (ref float rotation\+Scale\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Gets the rotation scale multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_abbfe1cf986525a06c85c2808ca86dd3e}{Set\+Rotation\+Scale\+Multiplier}} (float rotation\+Scale\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Sets the rotation scale multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a36b2fa3de44a3e2f40912059416e5712}{Get\+Skip\+Mouse\+Rotation}} (ref bool skip\+Mouse\+Rotation)
+\begin{DoxyCompactList}\small\item\em Gets the allow mouse rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a0184137db46681e33b3091cd3dface4f}{Set\+Skip\+Mouse\+Rotation}} (bool skip\+Mouse\+Rotation)
+\begin{DoxyCompactList}\small\item\em Sets the allow mouse rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a2bee2fa2bbca54b58a60b46b5f4ff10e}{Get\+Halt\+Update\+Movement}} (ref bool halt\+Update\+Movement)
+\begin{DoxyCompactList}\small\item\em Gets the halt update movement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_ab7b98dd3a0a6391629088234b9a91b96}{Set\+Halt\+Update\+Movement}} (bool halt\+Update\+Movement)
+\begin{DoxyCompactList}\small\item\em Sets the halt update movement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_o_v_r_player_controller_a0e8253009fdaaee37381f3fd266be0ab}{Reset\+Orientation}} ()
+\begin{DoxyCompactList}\small\item\em Resets the player look rotation when the device orientation is reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_a34988935e6de64d898ac15791ca5b4ab}{Acceleration}} = 0.\+1f
+\begin{DoxyCompactList}\small\item\em The rate acceleration during movement. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_a10d559b5719280d5431697f6716771eb}{Damping}} = 0.\+3f
+\begin{DoxyCompactList}\small\item\em The rate of damping on movement. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_ab296cb69afa2c2d2f27b744a67ee76cb}{Back\+And\+Side\+Dampen}} = 0.\+5f
+\begin{DoxyCompactList}\small\item\em The rate of additional damping when moving sideways or backwards. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_a251c8980d5628ca76603c45a4f736130}{Jump\+Force}} = 0.\+3f
+\begin{DoxyCompactList}\small\item\em The force applied to the character when jumping. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_ac5a0ffed44da66d1b1d9f9f23242f80d}{Rotation\+Amount}} = 1.\+5f
+\begin{DoxyCompactList}\small\item\em The rate of rotation when using a gamepad. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_ac0db4e9ec52b0434f9bc598b216bd315}{Rotation\+Ratchet}} = 45.\+0f
+\begin{DoxyCompactList}\small\item\em The rate of rotation when using the keyboard. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a7625f558b60c57b70babfa0346c6c8fc}{Snap\+Rotation}} = true
+\begin{DoxyCompactList}\small\item\em The player will rotate in fixed steps if Snap Rotation is enabled. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_o_v_r_player_controller_ac008648f8d95c523b3ec1519a14412d9}{Fixed\+Speed\+Steps}}
+\begin{DoxyCompactList}\small\item\em How many fixed speeds to use with linear movement? 0=linear control \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a2057d643d71fed4db48d14fd79476940}{Hmd\+ResetsY}} = true
+\begin{DoxyCompactList}\small\item\em If true, reset the initial yaw of the player controller when the Hmd pose is recentered. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_ae775aa774e439a7db47eafc8db37954f}{Hmd\+RotatesY}} = true
+\begin{DoxyCompactList}\small\item\em If true, tracking data from a child O\+V\+R\+Camera\+Rig will update the direction of movement. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_a5f28824c01b830bbdd3cf2f8db08c750}{Gravity\+Modifier}} = 0.\+379f
+\begin{DoxyCompactList}\small\item\em Modifies the strength of gravity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_adcd570d7bc7ab34da284f9cffb783d76}{use\+Profile\+Data}} = true
+\begin{DoxyCompactList}\small\item\em If true, each \mbox{\hyperlink{class_o_v_r_player_controller}{O\+V\+R\+Player\+Controller}} will use the player\textquotesingle{}s physical height. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_o_v_r_player_controller_a54e33ddb1baccab0a003b44b4d9f16c7}{Camera\+Height}}
+\begin{DoxyCompactList}\small\item\em The Camera\+Height is the actual height of the H\+MD and can be used to adjust the height of the character controller, which will affect the ability of the character to move into areas with a low ceiling. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a4b0c16663ab7c91a61f8b4ad19ac6225}{Teleported}}
+\begin{DoxyCompactList}\small\item\em This bool is set to true whenever the player controller has been teleported. It is reset after every frame. Some systems, such as Character\+Camera\+Constraint, test this boolean in order to disable logic that moves the character controller immediately following the teleport. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a3a5a22e71eae40f293ff52ba91926c57}{Enable\+Linear\+Movement}} = true
+\begin{DoxyCompactList}\small\item\em When true, user input will be applied to linear movement. Set this to false whenever the player controller needs to ignore input for linear movement. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a6d6cead08ad0ca0c7ac088bc0431cc9b}{Enable\+Rotation}} = true
+\begin{DoxyCompactList}\small\item\em When true, user input will be applied to rotation. Set this to false whenever the player controller needs to ignore input for rotation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_o_v_r_player_controller_a7387173e14aed68fe3ceaa851fc892c9}{Rotation\+Either\+Thumbstick}} = false
+\begin{DoxyCompactList}\small\item\em Rotation defaults to secondary thumbstick. You can allow either here. Note that this won\textquotesingle{}t behave well if Enable\+Linear\+Movement is true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_player_controller_a93c8be87d6ac15dc48b212b86a7f536b}\label{class_o_v_r_player_controller_a93c8be87d6ac15dc48b212b86a7f536b}} 
+virtual void {\bfseries Update\+Controller} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_player_controller_af34ed81e708c19b69f648611da69b093}\label{class_o_v_r_player_controller_af34ed81e708c19b69f648611da69b093}} 
+Character\+Controller {\bfseries Controller} = null
+\item 
+\mbox{\Hypertarget{class_o_v_r_player_controller_a318e0aacfc88250eb9dd7ed6123d6d15}\label{class_o_v_r_player_controller_a318e0aacfc88250eb9dd7ed6123d6d15}} 
+O\+V\+R\+Camera\+Rig {\bfseries Camera\+Rig} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_v_r_player_controller_a2be01417ba1eb1916603236fdafe0807}\label{class_o_v_r_player_controller_a2be01417ba1eb1916603236fdafe0807}} 
+float {\bfseries Initial\+Y\+Rotation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ Transform $>$ \mbox{\hyperlink{class_o_v_r_player_controller_ac228bea577daf7f3d660651b16e05e8f}{Transform\+Updated}}
+\begin{DoxyCompactList}\small\item\em This event is raised after the character controller is moved. This is used by the O\+V\+R\+Avatar\+Locomotion script to keep the avatar transform synchronized with the \mbox{\hyperlink{class_o_v_r_player_controller}{O\+V\+R\+Player\+Controller}}. \end{DoxyCompactList}\item 
+Action \mbox{\hyperlink{class_o_v_r_player_controller_a8c30476a6c26051e5529ac22e7850dad}{Camera\+Updated}}
+\begin{DoxyCompactList}\small\item\em This event is raised immediately after the camera transform has been updated, but before movement is updated. \end{DoxyCompactList}\item 
+Action \mbox{\hyperlink{class_o_v_r_player_controller_a73b5314bd6073abd8dd129921ab4a11e}{Pre\+Character\+Move}}
+\begin{DoxyCompactList}\small\item\em This event is raised right before the character controller is actually moved in order to provide other systems the opportunity to move the character controller in response to things other than user input, such as movement of the H\+MD. See Character\+Camera\+Constraint.\+cs for an example of this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls the player\textquotesingle{}s movement in virtual reality. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a2bee2fa2bbca54b58a60b46b5f4ff10e}\label{class_o_v_r_player_controller_a2bee2fa2bbca54b58a60b46b5f4ff10e}} 
+\index{OVRPlayerController@{OVRPlayerController}!GetHaltUpdateMovement@{GetHaltUpdateMovement}}
+\index{GetHaltUpdateMovement@{GetHaltUpdateMovement}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{GetHaltUpdateMovement()}{GetHaltUpdateMovement()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Get\+Halt\+Update\+Movement (\begin{DoxyParamCaption}\item[{ref bool}]{halt\+Update\+Movement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the halt update movement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em halt\+Update\+Movement} & Halt update movement.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a78d025669f94edceac2d9a2e533d3f0c}\label{class_o_v_r_player_controller_a78d025669f94edceac2d9a2e533d3f0c}} 
+\index{OVRPlayerController@{OVRPlayerController}!GetMoveScaleMultiplier@{GetMoveScaleMultiplier}}
+\index{GetMoveScaleMultiplier@{GetMoveScaleMultiplier}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{GetMoveScaleMultiplier()}{GetMoveScaleMultiplier()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Get\+Move\+Scale\+Multiplier (\begin{DoxyParamCaption}\item[{ref float}]{move\+Scale\+Multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the move scale multiplier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Scale\+Multiplier} & Move scale multiplier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a6398eaeae9a9a7cb2bcf05130ce024de}\label{class_o_v_r_player_controller_a6398eaeae9a9a7cb2bcf05130ce024de}} 
+\index{OVRPlayerController@{OVRPlayerController}!GetRotationScaleMultiplier@{GetRotationScaleMultiplier}}
+\index{GetRotationScaleMultiplier@{GetRotationScaleMultiplier}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{GetRotationScaleMultiplier()}{GetRotationScaleMultiplier()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Get\+Rotation\+Scale\+Multiplier (\begin{DoxyParamCaption}\item[{ref float}]{rotation\+Scale\+Multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the rotation scale multiplier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Scale\+Multiplier} & Rotation scale multiplier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a36b2fa3de44a3e2f40912059416e5712}\label{class_o_v_r_player_controller_a36b2fa3de44a3e2f40912059416e5712}} 
+\index{OVRPlayerController@{OVRPlayerController}!GetSkipMouseRotation@{GetSkipMouseRotation}}
+\index{GetSkipMouseRotation@{GetSkipMouseRotation}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{GetSkipMouseRotation()}{GetSkipMouseRotation()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Get\+Skip\+Mouse\+Rotation (\begin{DoxyParamCaption}\item[{ref bool}]{skip\+Mouse\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the allow mouse rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skip\+Mouse\+Rotation} & Allow mouse rotation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_ace5169f33e87513d00fb8f74447a29a9}\label{class_o_v_r_player_controller_ace5169f33e87513d00fb8f74447a29a9}} 
+\index{OVRPlayerController@{OVRPlayerController}!Jump@{Jump}}
+\index{Jump@{Jump}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Jump! Must be enabled manually. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a0e8253009fdaaee37381f3fd266be0ab}\label{class_o_v_r_player_controller_a0e8253009fdaaee37381f3fd266be0ab}} 
+\index{OVRPlayerController@{OVRPlayerController}!ResetOrientation@{ResetOrientation}}
+\index{ResetOrientation@{ResetOrientation}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{ResetOrientation()}{ResetOrientation()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Reset\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resets the player look rotation when the device orientation is reset. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ab7b98dd3a0a6391629088234b9a91b96}\label{class_o_v_r_player_controller_ab7b98dd3a0a6391629088234b9a91b96}} 
+\index{OVRPlayerController@{OVRPlayerController}!SetHaltUpdateMovement@{SetHaltUpdateMovement}}
+\index{SetHaltUpdateMovement@{SetHaltUpdateMovement}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{SetHaltUpdateMovement()}{SetHaltUpdateMovement()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Set\+Halt\+Update\+Movement (\begin{DoxyParamCaption}\item[{bool}]{halt\+Update\+Movement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the halt update movement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em halt\+Update\+Movement} & If set to {\ttfamily true} halt update movement.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_af1fc4270fae3033baec271faf3f127e1}\label{class_o_v_r_player_controller_af1fc4270fae3033baec271faf3f127e1}} 
+\index{OVRPlayerController@{OVRPlayerController}!SetMoveScaleMultiplier@{SetMoveScaleMultiplier}}
+\index{SetMoveScaleMultiplier@{SetMoveScaleMultiplier}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{SetMoveScaleMultiplier()}{SetMoveScaleMultiplier()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Set\+Move\+Scale\+Multiplier (\begin{DoxyParamCaption}\item[{float}]{move\+Scale\+Multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the move scale multiplier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move\+Scale\+Multiplier} & Move scale multiplier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_abbfe1cf986525a06c85c2808ca86dd3e}\label{class_o_v_r_player_controller_abbfe1cf986525a06c85c2808ca86dd3e}} 
+\index{OVRPlayerController@{OVRPlayerController}!SetRotationScaleMultiplier@{SetRotationScaleMultiplier}}
+\index{SetRotationScaleMultiplier@{SetRotationScaleMultiplier}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{SetRotationScaleMultiplier()}{SetRotationScaleMultiplier()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Set\+Rotation\+Scale\+Multiplier (\begin{DoxyParamCaption}\item[{float}]{rotation\+Scale\+Multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the rotation scale multiplier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation\+Scale\+Multiplier} & Rotation scale multiplier.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a0184137db46681e33b3091cd3dface4f}\label{class_o_v_r_player_controller_a0184137db46681e33b3091cd3dface4f}} 
+\index{OVRPlayerController@{OVRPlayerController}!SetSkipMouseRotation@{SetSkipMouseRotation}}
+\index{SetSkipMouseRotation@{SetSkipMouseRotation}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{SetSkipMouseRotation()}{SetSkipMouseRotation()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Set\+Skip\+Mouse\+Rotation (\begin{DoxyParamCaption}\item[{bool}]{skip\+Mouse\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the allow mouse rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skip\+Mouse\+Rotation} & If set to {\ttfamily true} allow mouse rotation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a5bc3a39d7183b4a8ca7137e74ae18245}\label{class_o_v_r_player_controller_a5bc3a39d7183b4a8ca7137e74ae18245}} 
+\index{OVRPlayerController@{OVRPlayerController}!Stop@{Stop}}
+\index{Stop@{Stop}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Stop this instance. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a948ea9ddea7aba20746fb918f3162be5}\label{class_o_v_r_player_controller_a948ea9ddea7aba20746fb918f3162be5}} 
+\index{OVRPlayerController@{OVRPlayerController}!UpdateTransform@{UpdateTransform}}
+\index{UpdateTransform@{UpdateTransform}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{UpdateTransform()}{UpdateTransform()}}
+{\footnotesize\ttfamily void O\+V\+R\+Player\+Controller.\+Update\+Transform (\begin{DoxyParamCaption}\item[{O\+V\+R\+Camera\+Rig}]{rig }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Invoked by O\+V\+R\+Camera\+Rig\textquotesingle{}s Updated\+Anchors callback. Allows the Hmd rotation to update the facing direction of the player. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a34988935e6de64d898ac15791ca5b4ab}\label{class_o_v_r_player_controller_a34988935e6de64d898ac15791ca5b4ab}} 
+\index{OVRPlayerController@{OVRPlayerController}!Acceleration@{Acceleration}}
+\index{Acceleration@{Acceleration}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{Acceleration}{Acceleration}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Acceleration = 0.\+1f}
+
+
+
+The rate acceleration during movement. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ab296cb69afa2c2d2f27b744a67ee76cb}\label{class_o_v_r_player_controller_ab296cb69afa2c2d2f27b744a67ee76cb}} 
+\index{OVRPlayerController@{OVRPlayerController}!BackAndSideDampen@{BackAndSideDampen}}
+\index{BackAndSideDampen@{BackAndSideDampen}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{BackAndSideDampen}{BackAndSideDampen}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Back\+And\+Side\+Dampen = 0.\+5f}
+
+
+
+The rate of additional damping when moving sideways or backwards. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a54e33ddb1baccab0a003b44b4d9f16c7}\label{class_o_v_r_player_controller_a54e33ddb1baccab0a003b44b4d9f16c7}} 
+\index{OVRPlayerController@{OVRPlayerController}!CameraHeight@{CameraHeight}}
+\index{CameraHeight@{CameraHeight}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{CameraHeight}{CameraHeight}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Camera\+Height}
+
+
+
+The Camera\+Height is the actual height of the H\+MD and can be used to adjust the height of the character controller, which will affect the ability of the character to move into areas with a low ceiling. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a10d559b5719280d5431697f6716771eb}\label{class_o_v_r_player_controller_a10d559b5719280d5431697f6716771eb}} 
+\index{OVRPlayerController@{OVRPlayerController}!Damping@{Damping}}
+\index{Damping@{Damping}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{Damping}{Damping}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Damping = 0.\+3f}
+
+
+
+The rate of damping on movement. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a3a5a22e71eae40f293ff52ba91926c57}\label{class_o_v_r_player_controller_a3a5a22e71eae40f293ff52ba91926c57}} 
+\index{OVRPlayerController@{OVRPlayerController}!EnableLinearMovement@{EnableLinearMovement}}
+\index{EnableLinearMovement@{EnableLinearMovement}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{EnableLinearMovement}{EnableLinearMovement}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Enable\+Linear\+Movement = true}
+
+
+
+When true, user input will be applied to linear movement. Set this to false whenever the player controller needs to ignore input for linear movement. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a6d6cead08ad0ca0c7ac088bc0431cc9b}\label{class_o_v_r_player_controller_a6d6cead08ad0ca0c7ac088bc0431cc9b}} 
+\index{OVRPlayerController@{OVRPlayerController}!EnableRotation@{EnableRotation}}
+\index{EnableRotation@{EnableRotation}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{EnableRotation}{EnableRotation}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Enable\+Rotation = true}
+
+
+
+When true, user input will be applied to rotation. Set this to false whenever the player controller needs to ignore input for rotation. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ac008648f8d95c523b3ec1519a14412d9}\label{class_o_v_r_player_controller_ac008648f8d95c523b3ec1519a14412d9}} 
+\index{OVRPlayerController@{OVRPlayerController}!FixedSpeedSteps@{FixedSpeedSteps}}
+\index{FixedSpeedSteps@{FixedSpeedSteps}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{FixedSpeedSteps}{FixedSpeedSteps}}
+{\footnotesize\ttfamily int O\+V\+R\+Player\+Controller.\+Fixed\+Speed\+Steps}
+
+
+
+How many fixed speeds to use with linear movement? 0=linear control 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a5f28824c01b830bbdd3cf2f8db08c750}\label{class_o_v_r_player_controller_a5f28824c01b830bbdd3cf2f8db08c750}} 
+\index{OVRPlayerController@{OVRPlayerController}!GravityModifier@{GravityModifier}}
+\index{GravityModifier@{GravityModifier}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{GravityModifier}{GravityModifier}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Gravity\+Modifier = 0.\+379f}
+
+
+
+Modifies the strength of gravity. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a2057d643d71fed4db48d14fd79476940}\label{class_o_v_r_player_controller_a2057d643d71fed4db48d14fd79476940}} 
+\index{OVRPlayerController@{OVRPlayerController}!HmdResetsY@{HmdResetsY}}
+\index{HmdResetsY@{HmdResetsY}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{HmdResetsY}{HmdResetsY}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Hmd\+ResetsY = true}
+
+
+
+If true, reset the initial yaw of the player controller when the Hmd pose is recentered. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ae775aa774e439a7db47eafc8db37954f}\label{class_o_v_r_player_controller_ae775aa774e439a7db47eafc8db37954f}} 
+\index{OVRPlayerController@{OVRPlayerController}!HmdRotatesY@{HmdRotatesY}}
+\index{HmdRotatesY@{HmdRotatesY}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{HmdRotatesY}{HmdRotatesY}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Hmd\+RotatesY = true}
+
+
+
+If true, tracking data from a child O\+V\+R\+Camera\+Rig will update the direction of movement. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a251c8980d5628ca76603c45a4f736130}\label{class_o_v_r_player_controller_a251c8980d5628ca76603c45a4f736130}} 
+\index{OVRPlayerController@{OVRPlayerController}!JumpForce@{JumpForce}}
+\index{JumpForce@{JumpForce}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{JumpForce}{JumpForce}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Jump\+Force = 0.\+3f}
+
+
+
+The force applied to the character when jumping. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ac5a0ffed44da66d1b1d9f9f23242f80d}\label{class_o_v_r_player_controller_ac5a0ffed44da66d1b1d9f9f23242f80d}} 
+\index{OVRPlayerController@{OVRPlayerController}!RotationAmount@{RotationAmount}}
+\index{RotationAmount@{RotationAmount}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{RotationAmount}{RotationAmount}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Rotation\+Amount = 1.\+5f}
+
+
+
+The rate of rotation when using a gamepad. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a7387173e14aed68fe3ceaa851fc892c9}\label{class_o_v_r_player_controller_a7387173e14aed68fe3ceaa851fc892c9}} 
+\index{OVRPlayerController@{OVRPlayerController}!RotationEitherThumbstick@{RotationEitherThumbstick}}
+\index{RotationEitherThumbstick@{RotationEitherThumbstick}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{RotationEitherThumbstick}{RotationEitherThumbstick}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Rotation\+Either\+Thumbstick = false}
+
+
+
+Rotation defaults to secondary thumbstick. You can allow either here. Note that this won\textquotesingle{}t behave well if Enable\+Linear\+Movement is true. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ac0db4e9ec52b0434f9bc598b216bd315}\label{class_o_v_r_player_controller_ac0db4e9ec52b0434f9bc598b216bd315}} 
+\index{OVRPlayerController@{OVRPlayerController}!RotationRatchet@{RotationRatchet}}
+\index{RotationRatchet@{RotationRatchet}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{RotationRatchet}{RotationRatchet}}
+{\footnotesize\ttfamily float O\+V\+R\+Player\+Controller.\+Rotation\+Ratchet = 45.\+0f}
+
+
+
+The rate of rotation when using the keyboard. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a7625f558b60c57b70babfa0346c6c8fc}\label{class_o_v_r_player_controller_a7625f558b60c57b70babfa0346c6c8fc}} 
+\index{OVRPlayerController@{OVRPlayerController}!SnapRotation@{SnapRotation}}
+\index{SnapRotation@{SnapRotation}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{SnapRotation}{SnapRotation}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Snap\+Rotation = true}
+
+
+
+The player will rotate in fixed steps if Snap Rotation is enabled. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a4b0c16663ab7c91a61f8b4ad19ac6225}\label{class_o_v_r_player_controller_a4b0c16663ab7c91a61f8b4ad19ac6225}} 
+\index{OVRPlayerController@{OVRPlayerController}!Teleported@{Teleported}}
+\index{Teleported@{Teleported}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{Teleported}{Teleported}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+Teleported}
+
+
+
+This bool is set to true whenever the player controller has been teleported. It is reset after every frame. Some systems, such as Character\+Camera\+Constraint, test this boolean in order to disable logic that moves the character controller immediately following the teleport. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_adcd570d7bc7ab34da284f9cffb783d76}\label{class_o_v_r_player_controller_adcd570d7bc7ab34da284f9cffb783d76}} 
+\index{OVRPlayerController@{OVRPlayerController}!useProfileData@{useProfileData}}
+\index{useProfileData@{useProfileData}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{useProfileData}{useProfileData}}
+{\footnotesize\ttfamily bool O\+V\+R\+Player\+Controller.\+use\+Profile\+Data = true}
+
+
+
+If true, each \mbox{\hyperlink{class_o_v_r_player_controller}{O\+V\+R\+Player\+Controller}} will use the player\textquotesingle{}s physical height. 
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_o_v_r_player_controller_a8c30476a6c26051e5529ac22e7850dad}\label{class_o_v_r_player_controller_a8c30476a6c26051e5529ac22e7850dad}} 
+\index{OVRPlayerController@{OVRPlayerController}!CameraUpdated@{CameraUpdated}}
+\index{CameraUpdated@{CameraUpdated}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{CameraUpdated}{CameraUpdated}}
+{\footnotesize\ttfamily Action O\+V\+R\+Player\+Controller.\+Camera\+Updated}
+
+
+
+This event is raised immediately after the camera transform has been updated, but before movement is updated. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_a73b5314bd6073abd8dd129921ab4a11e}\label{class_o_v_r_player_controller_a73b5314bd6073abd8dd129921ab4a11e}} 
+\index{OVRPlayerController@{OVRPlayerController}!PreCharacterMove@{PreCharacterMove}}
+\index{PreCharacterMove@{PreCharacterMove}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{PreCharacterMove}{PreCharacterMove}}
+{\footnotesize\ttfamily Action O\+V\+R\+Player\+Controller.\+Pre\+Character\+Move}
+
+
+
+This event is raised right before the character controller is actually moved in order to provide other systems the opportunity to move the character controller in response to things other than user input, such as movement of the H\+MD. See Character\+Camera\+Constraint.\+cs for an example of this. 
+
+\mbox{\Hypertarget{class_o_v_r_player_controller_ac228bea577daf7f3d660651b16e05e8f}\label{class_o_v_r_player_controller_ac228bea577daf7f3d660651b16e05e8f}} 
+\index{OVRPlayerController@{OVRPlayerController}!TransformUpdated@{TransformUpdated}}
+\index{TransformUpdated@{TransformUpdated}!OVRPlayerController@{OVRPlayerController}}
+\doxysubsubsection{\texorpdfstring{TransformUpdated}{TransformUpdated}}
+{\footnotesize\ttfamily Action$<$Transform$>$ O\+V\+R\+Player\+Controller.\+Transform\+Updated}
+
+
+
+This event is raised after the character controller is moved. This is used by the O\+V\+R\+Avatar\+Locomotion script to keep the avatar transform synchronized with the \mbox{\hyperlink{class_o_v_r_player_controller}{O\+V\+R\+Player\+Controller}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+V\+R\+Player\+Controller.\+cs\end{DoxyCompactItemize}

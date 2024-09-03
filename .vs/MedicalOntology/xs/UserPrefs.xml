@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{8CC6BD29-17F2-279A-6444-AD1183368C31}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ManipulateGraph.cs">
+    <Files>
+      <File FileName="../../Downloads/git-bash-for-mac-master/install.sh" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ButtonManager.cs" />
+      <File FileName="Assets/Scripts/CSVReader.cs" />
+      <File FileName="Assets/Scripts/DataContainer.cs" />
+      <File FileName="Assets/Scripts/DataPlotter.cs" />
+      <File FileName="Assets/Scripts/MedicalPlotter.cs" />
+      <File FileName="Assets/Scripts/MoveSpheres.cs" />
+      <File FileName="Assets/Oculus/Avatar/Scripts/OvrAvatar.cs" />
+      <File FileName="Assets/Oculus/VR/Scripts/Util/OVRPlayerController.cs" />
+      <File FileName="Assets/Scripts/OpenMenu.cs" />
+      <File FileName="Assets/Scripts/ManipulateGraph.cs" Line="14" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MedicalOntology" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Oculus" expanded="True">
+                <Node name="Avatar" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+                <Node name="VR" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="Util" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="ManipulateGraph.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6a202bd5-e6ca-420c-951b-66ae36453b65" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

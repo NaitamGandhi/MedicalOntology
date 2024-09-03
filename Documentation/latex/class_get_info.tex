@@ -1,0 +1,43 @@
+\hypertarget{class_get_info}{}\doxysection{Get\+Info Class Reference}
+\label{class_get_info}\index{GetInfo@{GetInfo}}
+
+
+This script is used to grab the information that\textquotesingle{}s neccessary from the \char`\"{}\+Data\+Container\char`\"{} script.  
+
+
+Inheritance diagram for Get\+Info\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_get_info}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_get_info_a9179cbcea0e3d97d66e2d3766f297b94}{action\+After\+Hit\+On\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_get_info_a6dddbc3b611d437abfbd1647188bf6e5}\label{class_get_info_a6dddbc3b611d437abfbd1647188bf6e5}} 
+Game\+Object {\bfseries node\+Menu}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This script is used to grab the information that\textquotesingle{}s neccessary from the \char`\"{}\+Data\+Container\char`\"{} script. 
+
+The script is attached to the \char`\"{}\+Data\+Point\char`\"{} gameobject. It will then deteced if the user has clicked onto the node. If so, then it\textquotesingle{}ll populate the \char`\"{}\+Body\char`\"{} of the \char`\"{}\+Nodemenu\+Panel\char`\"{} of the Nodemenu prefab. This script is in-\/progress to fix it\textquotesingle{}s behaviour. The core problem is that when the nodemenu is active and if there\textquotesingle{}s a node behind the menu, the click gets detected through the button on the menu, if there\textquotesingle{}s another node in-\/line with that button. For example, if you\textquotesingle{}ve already clicked on a node and the nodemenu has opened, when you try to click on \char`\"{}\+View Details\char`\"{} button right where you know there\textquotesingle{}s is a node in-\/line/directcly behind the button, the nodemenu of that node will get activated. Also the user should be able to click-\/hold and drag the node if they want to and be able to just click on the node to open the nodemenu. This functionality is still I\+N-\/\+P\+R\+O\+G\+R\+E\+SS (not a complete solution). One fix that was being attempted was to count the seconds the user holds the node for, and if it\textquotesingle{}s greater then two, then make it ignore the activation of the nodemenu and vice-\/versa for the other scenerio. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_get_info_a9179cbcea0e3d97d66e2d3766f297b94}\label{class_get_info_a9179cbcea0e3d97d66e2d3766f297b94}} 
+\index{GetInfo@{GetInfo}!actionAfterHitOnNode@{actionAfterHitOnNode}}
+\index{actionAfterHitOnNode@{actionAfterHitOnNode}!GetInfo@{GetInfo}}
+\doxysubsubsection{\texorpdfstring{actionAfterHitOnNode()}{actionAfterHitOnNode()}}
+{\footnotesize\ttfamily void Get\+Info.\+action\+After\+Hit\+On\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method detects a raycast hit on the node, runs the extraction of infromation from the datacontainers, stores it into the varibles, and attaches it to the \char`\"{}\+Body\char`\"{} to display as text.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Get\+Info.\+cs\end{DoxyCompactItemize}

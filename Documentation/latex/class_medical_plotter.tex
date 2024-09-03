@@ -1,0 +1,96 @@
+\hypertarget{class_medical_plotter}{}\doxysection{Medical\+Plotter Class Reference}
+\label{class_medical_plotter}\index{MedicalPlotter@{MedicalPlotter}}
+
+
+This file extrapolates the data from the \mbox{\hyperlink{class_c_s_v_reader}{C\+S\+V\+Reader}} file and uses it to attach it to the \char`\"{}\+Datapoint\char`\"{} prefab. It also plots the datapoint into the game.  
+
+
+Inheritance diagram for Medical\+Plotter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_medical_plotter}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a44693520268a4b2a0a5e61430bcd2659}\label{class_medical_plotter_a44693520268a4b2a0a5e61430bcd2659}} 
+Game\+Object {\bfseries find\+Node} (string node\+Name)
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a03ff930fd40327b83c1168b38af92b52}\label{class_medical_plotter_a03ff930fd40327b83c1168b38af92b52}} 
+void {\bfseries set\+Layers} (Game\+Object leaf, int layer)
+\item 
+\mbox{\Hypertarget{class_medical_plotter_afa6dc2b4e6c84a7b5b2e3c4dcf576098}\label{class_medical_plotter_afa6dc2b4e6c84a7b5b2e3c4dcf576098}} 
+int {\bfseries get\+Descendants} (Game\+Object node)
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a49c5a0b9ab6eb56dc91a32a3b1d820d3}\label{class_medical_plotter_a49c5a0b9ab6eb56dc91a32a3b1d820d3}} 
+void {\bfseries Draw\+Lines} ()
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a3761873b62bcd2447f5d1754f933e8b0}\label{class_medical_plotter_a3761873b62bcd2447f5d1754f933e8b0}} 
+void {\bfseries position\+Nodes} (string parent, int layernum, int baselayer, int pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a46a5d8929c03d90fe29f9ec7063e07c4}\label{class_medical_plotter_a46a5d8929c03d90fe29f9ec7063e07c4}} 
+\mbox{\hyperlink{class_circle}{Circle}} {\bfseries circle}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_aa317681a4bf0d7bbbf68bf3b8c534160}\label{class_medical_plotter_aa317681a4bf0d7bbbf68bf3b8c534160}} 
+string {\bfseries infile}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a0cd93b2f9f92cded48ded54364975215}\label{class_medical_plotter_a0cd93b2f9f92cded48ded54364975215}} 
+float {\bfseries test\+Radius}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a4d85940e008301ec1922fc85d81514fb}\label{class_medical_plotter_a4d85940e008301ec1922fc85d81514fb}} 
+Game\+Object {\bfseries cube\+Prefab}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a5c8a77d918ec18f984433dad8d793e5b}\label{class_medical_plotter_a5c8a77d918ec18f984433dad8d793e5b}} 
+Game\+Object {\bfseries cube\+Holder}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a2fa34145cb7501c44a5ae442064f077d}\label{class_medical_plotter_a2fa34145cb7501c44a5ae442064f077d}} 
+Line\+Renderer {\bfseries line}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_aa02271ec2010e4ca3a642bd13d810c19}\label{class_medical_plotter_aa02271ec2010e4ca3a642bd13d810c19}} 
+string {\bfseries node\+Column}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a9228c641f6c280bb0564cfb281ce4c06}\label{class_medical_plotter_a9228c641f6c280bb0564cfb281ce4c06}} 
+string {\bfseries parent\+Column}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a94cb05f064e2ea86ac0b7991d65d729d}\label{class_medical_plotter_a94cb05f064e2ea86ac0b7991d65d729d}} 
+string {\bfseries label\+Column}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a9be6176e008392194e6c4b5ad00bd855}\label{class_medical_plotter_a9be6176e008392194e6c4b5ad00bd855}} 
+string {\bfseries description\+Column}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a76b4698d0b67c5c66819873e5a5642fb}\label{class_medical_plotter_a76b4698d0b67c5c66819873e5a5642fb}} 
+string {\bfseries synonym\+Column}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a78687229b75c979f8e6d58cd5e491145}\label{class_medical_plotter_a78687229b75c979f8e6d58cd5e491145}} 
+int {\bfseries baselayer} = 5
+\item 
+\mbox{\Hypertarget{class_medical_plotter_aeb47a2cb17e2087cbf2040cbcadc67a7}\label{class_medical_plotter_aeb47a2cb17e2087cbf2040cbcadc67a7}} 
+List$<$ Game\+Object $>$ {\bfseries nodes}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_ab8a109f8a1ea716192c9b2a2c584408f}\label{class_medical_plotter_ab8a109f8a1ea716192c9b2a2c584408f}} 
+List$<$ Game\+Object $>$ {\bfseries leaves}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a7f3d4606c8090290e7eccfbf8bcb8437}\label{class_medical_plotter_a7f3d4606c8090290e7eccfbf8bcb8437}} 
+List$<$ Game\+Object $>$ {\bfseries visited}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_ad287dc781d528cbf740d8b6a7bf0cbce}\label{class_medical_plotter_ad287dc781d528cbf740d8b6a7bf0cbce}} 
+List$<$ Game\+Object $>$ {\bfseries parents}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a8994eea3ef003c2b9aac8c6c7b33e277}\label{class_medical_plotter_a8994eea3ef003c2b9aac8c6c7b33e277}} 
+Linked\+List$<$ Game\+Object $>$ {\bfseries node\+Objects}
+\item 
+\mbox{\Hypertarget{class_medical_plotter_a5205db6d6702ce28077a1eaef92a5732}\label{class_medical_plotter_a5205db6d6702ce28077a1eaef92a5732}} 
+Sorted\+Dictionary$<$ int, List$<$ Game\+Object $>$ $>$ {\bfseries node\+Map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file extrapolates the data from the \mbox{\hyperlink{class_c_s_v_reader}{C\+S\+V\+Reader}} file and uses it to attach it to the \char`\"{}\+Datapoint\char`\"{} prefab. It also plots the datapoint into the game. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Medical\+Plotter.\+cs\end{DoxyCompactItemize}
